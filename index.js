@@ -5,7 +5,7 @@ import fs from 'fs';
     // Step 1: Connect to cluster and generate a new Keypair
     const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
     // Load the wallet.json file
-    const walletBytes = JSON.parse(fs.readFileSync('/workspace/Solana_final/Candymachine/creatorwallet.json', 'utf-8'));
+    const walletBytes = JSON.parse(fs.readFileSync('/workspace/solana_final/Candymachine/creatorwallet.json', 'utf-8'));
 
     const fromWallet = Keypair.fromSecretKey(new Uint8Array(walletBytes));
 
